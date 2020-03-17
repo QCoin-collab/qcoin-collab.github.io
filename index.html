@@ -14,21 +14,29 @@
       <title>QCoin main page</title>
     </head>
     <body>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+      
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+      
+      <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyD0FPO9-MMFlcdYnUnWEHcD3NHQjfkaq7U",
+          authDomain: "qcoin-a6195.firebaseapp.com",
+          databaseURL: "https://qcoin-a6195.firebaseio.com",
+          projectId: "qcoin-a6195",
+          storageBucket: "qcoin-a6195.appspot.com",
+          messagingSenderId: "36295224503",
+          appId: "1:36295224503:web:6f775861eb16e708667132",
+          measurementId: "G-MP37TCMV5D"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
       Hello World.
-	 // Your web app's Firebase configuration
-	var firebaseConfig = {
-    apiKey: "AIzaSyD0FPO9-MMFlcdYnUnWEHcD3NHQjfkaq7U",
-    authDomain: "qcoin-a6195.firebaseapp.com",
-    databaseURL: "https://qcoin-a6195.firebaseio.com",
-    projectId: "qcoin-a6195",
-    storageBucket: "qcoin-a6195.appspot.com",
-    messagingSenderId: "36295224503",
-    appId: "1:36295224503:web:6f775861eb16e708667132",
-    measurementId: "G-MP37TCMV5D"
-	};
-	// Initialize Firebase
-	firebase.initializeApp(firebaseConfig);
-	firebase.analytics();
-		
     </body>
 </html>
